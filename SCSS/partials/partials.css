@@ -1,0 +1,38 @@
+.cards .basic-card {
+  color: whitesmoke;
+  background-image: linear-gradient(#e600d7, #2f00b9);
+}
+.cards .basic-card h2:first-child {
+  font-size: 32px;
+  color: #f9ff00;
+}
+.cards .basic-card h2:nth-child(2) span {
+  font-size: 32px;
+}
+.cards .basic-card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cards .basic-card ul li:nth-child(1),
+.cards .basic-card ul li:nth-child(2),
+.cards .basic-card ul li:nth-child(2) {
+  list-style-type: none;
+}
+.cards .basic-card ul li:nth-child(1)::before,
+.cards .basic-card ul li:nth-child(2)::before,
+.cards .basic-card ul li:nth-child(2)::before {
+  content: "&#10004";
+}
+.cards .basic-card ul li:nth-child(3),
+.cards .basic-card ul li:nth-child(4),
+.cards .basic-card ul li:nth-child(5) {
+  list-style-type: none;
+}
+.cards .basic-card ul li:nth-child(3)::before,
+.cards .basic-card ul li:nth-child(4)::before,
+.cards .basic-card ul li:nth-child(5)::before {
+  content: "&#10008";
+}/*# sourceMappingURL=partials.css.map */

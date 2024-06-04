@@ -1,0 +1,31 @@
+@use 'utils';
+@use 'colors';
+body {
+}
+.cards {
+  .basic-card {
+    color: whitesmoke;
+    @include utils.card-gradient();
+
+    h2:first-child {
+      font-size: 32px;
+      color: colors.$price-color;
+    }
+    h2:nth-child(2) span {
+      font-size: 32px;
+    }
+    ul {
+      @include utils.flex(column);
+      li:nth-child(1),
+      li:nth-child(2),
+      li:nth-child(2) {
+        @include utils.included();
+      }
+      li:nth-child(3),
+      li:nth-child(4),
+      li:nth-child(5) {
+        @include utils.not-included();
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$duration: 500ms;
+$bg-color: slategray;
+
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: $bg-color;
+  border-radius: 12px;
+  transition: all $duration;
+  margin: 50px auto;
+  &:hover {
+    transform: scaleX(1.1);
+  }
+}

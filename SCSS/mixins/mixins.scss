@@ -1,0 +1,45 @@
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 10px) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+.boxes {
+  @include flex($justify: center, $gap: 20px);
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.items {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  background-color: lightcoral;
+}
+
+.box {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 8px;
+}
+.box:nth-child(1) {
+  @include flex($justify: start, $align: start);
+}
+.box:nth-child(2) {
+  @include flex($justify: start, $align: space-around);
+}
+.box:nth-child(3) {
+  @include flex($justify: center, $align: start);
+}
+.box:nth-child(4) {
+  @include flex(column, start, space-evenly);
+}
+.box:nth-child(5) {
+  @include flex(column, end, center);
+}
+.box:nth-child(6) {
+  @include flex(row-reverse, center, end);
+}
