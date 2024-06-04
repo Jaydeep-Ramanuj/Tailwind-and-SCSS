@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form action="" class="m-6 bg-slate-50 w-fit p-10">
+      <h2 class="text-center font-semibold text-amber-700 text-xl">Sign in</h2>
+      <div class="input">
+        <input
+          class="bg-gray-100 p-2 rounded-md mt-2 peer"
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your username"
+          required
+        />
+        <div class="hidden text-orange-800 peer-invalid:block feedback">
+          Invalid username
+        </div>
+      </div>
+      <div class="input">
+        <input
+          class="bg-gray-100 p-2 rounded-md mt-2 peer"
+          type="email"
+          name=""
+          id=""
+          maxlength="20"
+          minlength="3"
+          placeholder="Enter your email"
+          required
+        />
+        <div class="hidden text-orange-800 peer-invalid:block feedback">
+          Invalid email
+        </div>
+      </div>
+      <div class="input">
+        <input
+          class="bg-gray-100 p-2 rounded-md mt-2 peer"
+          type="password"
+          name=""
+          id=""
+          pattern="*[a-z]*[A-Z]*[0-9]"
+          required
+          placeholder="Enter your password"
+        />
+        <div class="hidden text-orange-800 peer-invalid:block feedback">
+          Invalid password
+        </div>
+      </div>
+      <button class="mt-3 px-3 py-2 bg-slate-500 rounded-md text-white">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>

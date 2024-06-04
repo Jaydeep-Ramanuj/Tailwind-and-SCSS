@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-fit todo my-10 mx-auto">
+      <div
+        class="input w-fit flex gap-4 bg-slate-400 p-3 rounded-lg text-white"
+      >
+        <input
+          type="text"
+          name=""
+          id="task-input"
+          placeholder="Enter your task"
+          class="rounded-md ps-1.5 text-slate-800 font-medium"
+        />
+        <button
+          id="add"
+          class="font-semibold bg-slate-500 p-1 rounded-md active:scale-95"
+        >
+          Add
+        </button>
+      </div>
+      <div id="todo-list" class="mt-2 h-[300px] bg-slate-200 rounded-md p-2">
+        <!-- <div
+          class="task w-full rounded-md p-1 ps-2 bg-slate-400 font-medium text-gray-200"
+        >
+          Jay
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      const addBtn = document.getElementById("add");
+      const input = document.getElementById("task-input");
+      const todoList = document.getElementById("todo-list");
+
+      taskClassList =
+        "task w-full rounded-md p-1 ps-2 bg-slate-400 font-medium text-gray-200 mt-1 flex items-center ";
+      textCSS = "peer-checked:line-through";
+      checkBoxCSS = "size-3 me-1 peer";
+      addBtn.addEventListener("click", () => {
+        let newTask = document.createElement("div");
+        let taskText = document.createElement("span");
+        let checkBox = document.createElement("input");
+        checkBox.setAttribute("type", "checkbox");
+        newTask.setAttribute("class", taskClassList);
+        checkBox.setAttribute("class", checkBoxCSS);
+        taskText.setAttribute("class", textCSS);
+
+        taskText.innerText = input.value;
+        newTask.append(checkBox);
+        newTask.append(taskText);
+        todoList.append(newTask);
+      });
+    </script>
+  </body>
+</html>
