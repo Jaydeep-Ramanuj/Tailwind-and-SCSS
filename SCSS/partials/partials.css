@@ -1,13 +1,60 @@
-.cards .basic-card {
-  color: whitesmoke;
-  background-image: linear-gradient(#e600d7, #2f00b9);
+@charset "UTF-8";
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 100px auto;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
-.cards .basic-card h2:first-child {
+.cards .basic-card,
+.cards .standard-card,
+.cards .premium-card {
+  width: 300px;
+  padding: 10px;
+  border-radius: 12px;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(#e600d7, #2f00b9);
+  transition: all 300ms;
+}
+.cards .basic-card:hover,
+.cards .standard-card:hover,
+.cards .premium-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: scale(1.02);
+}
+.cards .basic-card h2:first-child,
+.cards .standard-card h2:first-child,
+.cards .premium-card h2:first-child {
   font-size: 32px;
   color: #f9ff00;
 }
-.cards .basic-card h2:nth-child(2) span {
+.cards .basic-card h2:nth-child(2) span,
+.cards .standard-card h2:nth-child(2) span,
+.cards .premium-card h2:nth-child(2) span {
   font-size: 32px;
+}
+.cards .basic-card .btn,
+.cards .standard-card .btn,
+.cards .premium-card .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: grey;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border-radius: 24px;
+  background-color: lightgray;
+  transition: all 300ms;
+}
+.cards .basic-card .btn:hover,
+.cards .standard-card .btn:hover,
+.cards .premium-card .btn:hover {
+  background-color: #33ebd9;
+  color: whitesmoke;
 }
 .cards .basic-card ul {
   display: flex;
@@ -18,21 +65,111 @@
 }
 .cards .basic-card ul li:nth-child(1),
 .cards .basic-card ul li:nth-child(2),
-.cards .basic-card ul li:nth-child(2) {
+.cards .basic-card ul li:nth-child(3) {
   list-style-type: none;
+  position: relative;
 }
 .cards .basic-card ul li:nth-child(1)::before,
 .cards .basic-card ul li:nth-child(2)::before,
-.cards .basic-card ul li:nth-child(2)::before {
-  content: "&#10004";
+.cards .basic-card ul li:nth-child(3)::before {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  content: "✔";
 }
-.cards .basic-card ul li:nth-child(3),
 .cards .basic-card ul li:nth-child(4),
-.cards .basic-card ul li:nth-child(5) {
+.cards .basic-card ul li:nth-child(5),
+.cards .basic-card ul li:nth-child(6) {
   list-style-type: none;
+  position: relative;
 }
-.cards .basic-card ul li:nth-child(3)::before,
 .cards .basic-card ul li:nth-child(4)::before,
-.cards .basic-card ul li:nth-child(5)::before {
-  content: "&#10008";
+.cards .basic-card ul li:nth-child(5)::before,
+.cards .basic-card ul li:nth-child(6)::before {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  content: "✘";
+}
+.cards .standard-card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cards .standard-card ul li:nth-child(1),
+.cards .standard-card ul li:nth-child(2),
+.cards .standard-card ul li:nth-child(3),
+.cards .standard-card ul li:nth-child(5),
+.cards .standard-card ul li:nth-child(6) {
+  list-style-type: none;
+  position: relative;
+}
+.cards .standard-card ul li:nth-child(1)::before,
+.cards .standard-card ul li:nth-child(2)::before,
+.cards .standard-card ul li:nth-child(3)::before,
+.cards .standard-card ul li:nth-child(5)::before,
+.cards .standard-card ul li:nth-child(6)::before {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  content: "✔";
+}
+.cards .standard-card ul li:nth-child(4) {
+  list-style-type: none;
+  position: relative;
+}
+.cards .standard-card ul li:nth-child(4)::before {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  content: "✘";
+}
+.cards .premium-card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cards .premium-card ul li:nth-child(1),
+.cards .premium-card ul li:nth-child(2),
+.cards .premium-card ul li:nth-child(3),
+.cards .premium-card ul li:nth-child(4),
+.cards .premium-card ul li:nth-child(5),
+.cards .premium-card ul li:nth-child(6) {
+  list-style-type: none;
+  position: relative;
+}
+.cards .premium-card ul li:nth-child(1)::before,
+.cards .premium-card ul li:nth-child(2)::before,
+.cards .premium-card ul li:nth-child(3)::before,
+.cards .premium-card ul li:nth-child(4)::before,
+.cards .premium-card ul li:nth-child(5)::before,
+.cards .premium-card ul li:nth-child(6)::before {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  content: "✔";
 }/*# sourceMappingURL=partials.css.map */
