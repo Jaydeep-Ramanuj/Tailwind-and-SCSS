@@ -1,0 +1,25 @@
+ul li:nth-child(1)::after {
+  content: "THIS WILL BE IN UPPER CASE";
+  margin-left: 20px;
+  color: red;
+}
+ul li:nth-child(2)::after {
+  content: "this will be in lower case";
+  margin-left: 20px;
+  color: red;
+}
+ul li:nth-child(3)::after {
+  content: "uzkh88y";
+  margin-left: 20px;
+  color: red;
+}
+ul li:nth-child(4)::after {
+  content: "New id will be added after this:uzkh89b";
+  margin-left: 20px;
+  color: red;
+}
+ul li:nth-child(5)::after {
+  content: "Sliced string:  string will be ";
+  margin-left: 20px;
+  color: red;
+}/*# sourceMappingURL=string.css.map */

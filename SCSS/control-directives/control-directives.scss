@@ -1,0 +1,21 @@
+.box {
+  $parent-size: medium;
+  margin: 50 auto;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 12px;
+  .inner-box {
+    height: 20px;
+    background-color: tomato;
+    border-radius: 8px;
+    @if ($parent-size == small) {
+      width: 25%;
+    } @else if ($parent-size == medium) {
+      width: 50%;
+    } @else if($parent-size == large) {
+      width: 80%;
+    } @else {
+      width: 100%;
+    }
+  }
+}

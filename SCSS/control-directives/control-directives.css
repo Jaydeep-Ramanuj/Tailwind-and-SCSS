@@ -1,0 +1,12 @@
+.box {
+  margin: 50 auto;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 12px;
+}
+.box .inner-box {
+  height: 20px;
+  background-color: tomato;
+  border-radius: 8px;
+  width: 50%;
+}/*# sourceMappingURL=control-directives.css.map */

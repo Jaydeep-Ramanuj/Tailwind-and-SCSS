@@ -1,0 +1,50 @@
+@use "sass:string";
+
+ul {
+  li:nth-child(1) {
+    &::after {
+      content: string.to-upper-case("This will be in upper case");
+      margin-left: 20px;
+      color: red;
+    }
+  }
+  li:nth-child(2) {
+    &::after {
+      content: string.to-lower-case("THIS WILL BE IN LOWER CASE");
+      margin-left: 20px;
+      color: red;
+    }
+  }
+  li:nth-child(3) {
+    &::after {
+      content: string.quote(string.unique-id());
+      margin-left: 20px;
+      color: red;
+    }
+  }
+  li:nth-child(4) {
+    &::after {
+      $str: "New id will be added after this:";
+      content: string.insert(
+        $str,
+        string.quote(string.unique-id()),
+        string.length($str) + 1
+      );
+      margin-left: 20px;
+      color: red;
+    }
+  }
+  li:nth-child(5) {
+    &::after {
+      $str: "This string will be sliced";
+      $output: "Sliced string: ";
+      content: string.insert(
+        $output,
+        string.slice($str, 5, 20),
+        string.length($str) + 1
+      );
+      margin-left: 20px;
+      color: red;
+    }
+  }
+}

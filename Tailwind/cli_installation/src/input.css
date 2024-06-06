@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .card {
+        @apply w-3/5 sm:w-[600px] lg:w-[800px] my-24 mx-auto bg-neutral-300 p-8 rounded-2xl relative shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+    }
+
+    .box {
+        @apply h-48 w-48 bg-gradient-to-r from-orange-400 to-red-400 rounded-xl absolute -start-12 transition-all duration-300 hover:-start-16 hover:shadow-xl;
+    }
+
+}
