@@ -1,0 +1,38 @@
+.p-style, .container .data p {
+  background-color: #9cbda9;
+  max-width: 300px;
+  padding-top: 120px;
+  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+}
+
+.a-style, .container a {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+}
+
+.container {
+  padding: 10px;
+  background-color: #2c1b29;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.container a {
+  margin-left: 15px;
+  background-color: #78576d;
+}
+.container .data {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.container .data p a {
+  background-color: white;
+  color: black;
+  margin-top: 25px;
+}/*# sourceMappingURL=6.css.map */

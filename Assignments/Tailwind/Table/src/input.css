@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .table {
+        @apply p-2 text-slate-600
+    }
+
+    .header-row {
+        @apply border-b-4 mb-2 text-slate-700
+    }
+
+    .data-row {
+        @apply border-b-2 mt-2
+    }
+
+    .header-cell {
+        @apply min-w-[150px] uppercase text-start
+    }
+
+    .cell {
+        @apply p-1 m-1 max-w-[150px] w-fit
+    }
+
+    .status {
+        @apply px-2 py-0.5 rounded-sm text-white text-sm
+    }
+}

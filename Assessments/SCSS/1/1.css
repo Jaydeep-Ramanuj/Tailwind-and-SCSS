@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  border: 3px solid grey;
+  width: 90%;
+  height: 90%;
+  margin: 50px auto;
+}
+
+header {
+  background-color: #6699ff;
+  height: 100px;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+main .main {
+  display: flex;
+}
+main .main .content {
+  height: 200px;
+  flex-grow: 1;
+  background-color: #66cc33;
+}
+main .main .sidebar {
+  height: 200px;
+  flex-grow: 1;
+  background-color: #cc66ff;
+}
+main .twins {
+  display: flex;
+}
+main .twin {
+  height: 200px;
+  flex-grow: 1;
+  background-color: #ff9900;
+}
+
+footer {
+  background-color: #0066cc;
+  height: 100px;
+}/*# sourceMappingURL=1.css.map */

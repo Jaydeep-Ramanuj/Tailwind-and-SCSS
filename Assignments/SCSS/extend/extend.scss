@@ -1,0 +1,27 @@
+commonStyle {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #00ffff;
+  font-family: "Roboto", sans-serif;
+  h2 {
+  }
+  .btns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  button {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.articles {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  .article {
+    @extend commonStyle;
+  }
+}

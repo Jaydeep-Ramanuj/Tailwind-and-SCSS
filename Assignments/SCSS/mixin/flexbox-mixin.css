@@ -1,0 +1,18 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: initial;
+  gap: initial;
+}
+.parent .child {
+  height: 100px;
+  width: 100px;
+  border-radius: 6px;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+}/*# sourceMappingURL=flexbox-mixin.css.map */

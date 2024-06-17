@@ -1,0 +1,50 @@
+.column-style {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: rotate(-45deg);
+  position: relative;
+  z-index: 1;
+  img {
+    height: 150px;
+    width: 150px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: all 600ms;
+    position: relative;
+    filter: brightness(50%);
+    &:hover {
+      filter: brightness(100%);
+      transform: scale(1.5) rotate(45deg);
+      z-index: 2;
+    }
+  }
+  &:hover {
+    z-index: 2;
+  }
+}
+
+.layout {
+  padding: 30px;
+  background-color: #23262e;
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  .column {
+    @extend .column-style;
+  }
+  .column-1 {
+  }
+  .column-2 {
+  }
+  .column-3 {
+    margin-left: 80px;
+  }
+  .column-4 {
+    margin-left: 160px;
+    top: -150px;
+    left: -150px;
+  }
+}

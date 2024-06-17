@@ -1,0 +1,42 @@
+$bg-color: #2c1b29;
+$btn-bg-color: #78576d;
+
+.p-style {
+  background-color: #9cbda9;
+  max-width: 300px;
+  padding-top: 120px;
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+}
+
+.a-style {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+}
+.container {
+  padding: 10px;
+  background-color: $bg-color;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  a {
+    @extend .a-style;
+    margin-left: 15px;
+    background-color: $btn-bg-color;
+  }
+  .data {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    p {
+      @extend .p-style;
+      a {
+        background-color: white;
+        color: black;
+        margin-top: 25px;
+      }
+    }
+  }
+}

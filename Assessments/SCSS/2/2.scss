@@ -1,0 +1,23 @@
+@mixin border($width: 1px, $color: black, $type: solid) {
+  border: $width $type $color;
+}
+
+.outer {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  @include border(5px, aqua, solid);
+  .inner {
+    padding: inherit;
+    @include border(5px, red, solid);
+    h1 {
+      padding: inherit;
+      @include border(5px, lime, solid);
+    }
+    ul {
+      padding: inherit;
+      @include border(5px, blue, solid);
+    }
+  }
+}

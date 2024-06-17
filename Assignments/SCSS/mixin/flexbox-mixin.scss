@@ -1,0 +1,23 @@
+@mixin customFlex(
+  $direction: row,
+  $justify: initial,
+  $align: initial,
+  $gap: initial
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+.parent {
+  @include customFlex($justify: space-around);
+  .child {
+    height: 100px;
+    width: 100px;
+    border-radius: 6px;
+    background-color: yellowgreen;
+    @include customFlex($justify: center, $align: center);
+  }
+}

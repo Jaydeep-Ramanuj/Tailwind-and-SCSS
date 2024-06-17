@@ -1,0 +1,22 @@
+commonStyle, .articles .article {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #00ffff;
+  font-family: "Roboto", sans-serif;
+}
+commonStyle .btns, .articles .article .btns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+commonStyle button, .articles .article button {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.articles {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}/*# sourceMappingURL=extend.css.map */

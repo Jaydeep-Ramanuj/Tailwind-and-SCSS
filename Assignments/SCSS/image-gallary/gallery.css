@@ -1,0 +1,107 @@
+.image-gallery {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.image-gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 8.3333333333%);
+  grid-template-rows: repeat(4, 180px);
+}
+.image-gallery .gallery img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-gallery .gallery img:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+.image-gallery .gallery img:nth-child(2) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.image-gallery .gallery img:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.image-gallery .gallery img:nth-child(4) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+.image-gallery .gallery img:nth-child(5) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 10;
+  grid-column-end: 13;
+}
+.image-gallery .gallery img:nth-child(6) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.image-gallery .gallery img:nth-child(7) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 7;
+  grid-column-end: 13;
+}
+.image-gallery .gallery img:nth-child(8) {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.image-gallery .gallery img:nth-child(9) {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.image-gallery .gallery img:nth-child(10) {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.image-gallery .menu {
+  padding-right: 20px;
+  background-color: #23262e;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.image-gallery .menu h2 {
+  text-align: end;
+}
+.image-gallery .menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.image-gallery .menu nav a {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  transition: all 300ms;
+}
+.image-gallery .menu nav a:hover {
+  color: orangered;
+}
+.image-gallery .menu .socials {
+  margin-top: 10px;
+  text-align: end;
+}
+.image-gallery .menu .socials i {
+  font-size: 1.6em;
+  margin-left: 20px;
+}/*# sourceMappingURL=gallery.css.map */

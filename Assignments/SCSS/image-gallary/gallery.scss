@@ -1,0 +1,89 @@
+@mixin gridPoints(
+  $rowStart: initial,
+  $rowEnd: initial,
+  $columnStart: initial,
+  $columnEnd: initial
+) {
+  grid-row-start: $rowStart;
+  grid-row-end: $rowEnd;
+  grid-column-start: $columnStart;
+  grid-column-end: $columnEnd;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(12, (100% / 12));
+    grid-template-rows: repeat(4, 180px);
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      &:nth-child(1) {
+        @include gridPoints(1, 2, 1, 9);
+      }
+      &:nth-child(2) {
+        @include gridPoints(1, 2, 9, 13);
+      }
+      &:nth-child(3) {
+        @include gridPoints(2, 3, 1, 4);
+      }
+      &:nth-child(4) {
+        @include gridPoints(2, 3, 4, 10);
+      }
+      &:nth-child(5) {
+        @include gridPoints(2, 3, 10, 13);
+      }
+      &:nth-child(6) {
+        @include gridPoints(3, 4, 1, 7);
+      }
+      &:nth-child(7) {
+        @include gridPoints(3, 4, 7, 13);
+      }
+      &:nth-child(8) {
+        @include gridPoints(4, 5, 1, 5);
+      }
+      &:nth-child(9) {
+        @include gridPoints(4, 5, 5, 9);
+      }
+      &:nth-child(10) {
+        @include gridPoints(4, 5, 9, 13);
+      }
+    }
+  }
+  .menu {
+    padding-right: 20px;
+    background-color: #23262e;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    h2 {
+      text-align: end;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      a {
+        margin-top: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: white;
+        transition: all 300ms;
+        &:hover {
+          color: orangered;
+        }
+      }
+    }
+    .socials {
+      margin-top: 10px;
+      text-align: end;
+      i {
+        font-size: 1.6em;
+        margin-left: 20px;
+      }
+    }
+  }
+}
