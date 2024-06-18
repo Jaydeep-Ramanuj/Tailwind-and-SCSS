@@ -1,0 +1,25 @@
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  background-color: #23262e;
+  margin: 100px auto;
+  position: relative;
+  left: initial;
+  right: initial;
+  top: initial;
+  bottom: initial;
+  z-index: 0;
+}
+.box .hover-box {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #42b291;
+  position: absolute;
+  left: calc(50% - 100px);
+  right: initial;
+  top: -50px;
+  bottom: initial;
+  z-index: 0;
+}

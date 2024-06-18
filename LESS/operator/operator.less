@@ -1,0 +1,20 @@
+@box-size: 100px;
+@inner-box-size: 100px;
+
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  background-color: #23262e;
+  margin: 100px auto;
+  position: relative;
+  .hover-box {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #42b291;
+    position: absolute;
+    top: -50px;
+    left: (@box-size / 2) - 100px;
+  }
+}

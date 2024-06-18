@@ -1,0 +1,13 @@
+@bg-color: #23262e;
+@border-radius: 12px;
+
+.border(@width:1px,@type:solid,@color:black) {
+  border: @width @type @color;
+}
+
+.hover-effect(@scale:1) {
+  transition: all 300ms;
+  &:hover {
+    transform: scale(@scale);
+  }
+}

@@ -1,0 +1,24 @@
+.customPosition(@position:static,@top:initial,@left:initial,@bottom:initial,@right:initial,@zIndex:0) {
+  position: @position;
+  left: @left;
+  right: @right;
+  top: @top;
+  bottom: @bottom;
+  z-index: @zIndex;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px;
+  background-color: #23262e;
+  margin: 100px auto;
+  .customPosition(@position:relative);
+  .hover-box {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #42b291;
+    .customPosition(@position:absolute, @top:-50px, @left:calc(50% - 100px));
+  }
+}
