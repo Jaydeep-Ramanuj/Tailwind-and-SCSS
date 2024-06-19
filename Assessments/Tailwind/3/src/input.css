@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .menu-label {
+        @apply text-gray-400 font-bold uppercase text-xs
+    }
+
+    .menu {
+        @apply text-slate-600 text-sm font-semibold transition-all duration-300 py-1 ps-2 hover:bg-gray-100
+    }
+
+    .top-bar-icon {
+        @apply text-gray-400 text-[20px] hover:text-gray-600 cursor-pointer
+    }
+
+    .analytics-card {
+        @apply max-w-[250px] border p-2 rounded-lg grow transition-all duration-300 hover:bg-gray-100 cursor-pointer
+    }
+}
