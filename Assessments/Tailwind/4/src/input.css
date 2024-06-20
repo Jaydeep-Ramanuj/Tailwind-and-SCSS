@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .menu {
+        @apply flex items-center text-white transition-all duration-300 border-b-2 border-b-transparent hover:border-b-2 hover:border-b-blue-700 mt-4 gap-2
+    }
+}
