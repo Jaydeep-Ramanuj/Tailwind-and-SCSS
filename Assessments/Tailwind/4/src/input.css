@@ -5,6 +5,10 @@
 @layer components {
 
     .menu {
-        @apply flex items-center text-white transition-all duration-300 border-b-2 border-b-transparent hover:border-b-2 hover:border-b-blue-700 mt-4 gap-2
+        @apply flex items-center text-white transition-all duration-300 border-b-2 border-b-transparent hover:border-b-2 hover:border-b-blue-400 mt-4 gap-2 pb-2
+    }
+
+    .number {
+        @apply rounded-md h-20 bg-gradient-to-b from-[#adfbd7] to-[#d2ffeb] p-3 border-b-4 border-b-[#009666] flex items-center justify-between grow pe-6 min-w-[200px]
     }
 }

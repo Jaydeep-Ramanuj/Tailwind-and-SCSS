@@ -12,7 +12,7 @@
   </head>
   <body>
     <div
-      class="dashboard mx-auto mt-16 max-w-[800px] h-[600px] border rounded-md flex flex-col"
+      class="dashboard mx-auto mt-16 max-w-[1000px] h-[600px] border rounded-md flex flex-col overflow-hidden"
     >
       <div class="header bg-[#202a38] flex justify-between items-center p-2">
         <span class="material-symbols-outlined text-white text-3xl">
@@ -35,28 +35,260 @@
           </span>
         </div>
       </div>
-      <div class="main flex grow">
-        <div class="side-bar bg-[#1e2936] max-w-[150px] grow p-2 h-full">
+      <div class="main flex grow bg-[#202a38]">
+        <div class="side-bar bg-[#1e2936] min-w-[150px] grow p-2 h-full">
           <ul>
-            <li class="menu">
-              <span class="material-symbols-outlined"> checklist </span> Tasks
+            <li class="menu group">
+              <span class="material-symbols-outlined group-hover:text-blue-400">
+                checklist
+              </span>
+              Tasks
             </li>
-            <li class="menu">
-              <span class="material-symbols-outlined"> mail </span> Messages
+            <li class="menu group">
+              <span class="material-symbols-outlined group-hover:text-blue-400">
+                mail
+              </span>
+              Messages
             </li>
-            <li class="menu">
-              <span class="material-symbols-outlined"> monitoring </span>
+            <li class="menu group">
+              <span class="material-symbols-outlined group-hover:text-blue-400">
+                monitoring
+              </span>
               Analytics
             </li>
-            <li class="menu">
-              <span class="material-symbols-outlined">
+            <li class="menu group">
+              <span class="material-symbols-outlined group-hover:text-blue-400">
                 account_balance_wallet
               </span>
               Payments
             </li>
           </ul>
         </div>
-        <div class="main-area"></div>
+        <div
+          class="main-area rounded-tl-3xl grow overflow-hidden flex flex-col"
+        >
+          <div
+            class="title bg-gradient-to-r from-blue-600 to-[#202a38] p-2 text-lg font-bold text-white ps-4"
+          >
+            Analytics
+          </div>
+          <div class="data-area grow bg-[#f8fbfd] p-3 flex flex-col">
+            <div class="numbers flex flex-wrap gap-3">
+              <div class="number">
+                <div
+                  class="icon size-14 rounded-full bg-[#04986b] flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-3xl text-white">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <span class="text-center">
+                  <span class="text-gray-500 font-bold uppercase text-xs"
+                    >Total Revenue</span
+                  ><br />
+                  <span
+                    class="text-xl font-bold flex items-center text-slate-800"
+                    >$3493
+                    <span
+                      class="material-symbols-outlined text-green-500 text-3xl"
+                    >
+                      arrow_drop_up
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="number">
+                <div
+                  class="icon size-14 rounded-full bg-[#04986b] flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-3xl text-white">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <span class="text-center">
+                  <span class="text-gray-500 font-bold uppercase text-xs"
+                    >Total Revenue</span
+                  ><br />
+                  <span
+                    class="text-xl font-bold flex items-center text-slate-800"
+                    >$3493
+                    <span
+                      class="material-symbols-outlined text-green-500 text-3xl"
+                    >
+                      arrow_drop_up
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="number">
+                <div
+                  class="icon size-14 rounded-full bg-[#04986b] flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-3xl text-white">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <span class="text-center">
+                  <span class="text-gray-500 font-bold uppercase text-xs"
+                    >Total Revenue</span
+                  ><br />
+                  <span
+                    class="text-xl font-bold flex items-center text-slate-800"
+                    >$3493
+                    <span
+                      class="material-symbols-outlined text-green-500 text-3xl"
+                    >
+                      arrow_drop_up
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="number">
+                <div
+                  class="icon size-14 rounded-full bg-[#04986b] flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-3xl text-white">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <span class="text-center">
+                  <span class="text-gray-500 font-bold uppercase text-xs"
+                    >Total Revenue</span
+                  ><br />
+                  <span
+                    class="text-xl font-bold flex items-center text-slate-800"
+                    >$3493
+                    <span
+                      class="material-symbols-outlined text-green-500 text-3xl"
+                    >
+                      arrow_drop_up
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="number">
+                <div
+                  class="icon size-14 rounded-full bg-[#04986b] flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-3xl text-white">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <span class="text-center">
+                  <span class="text-gray-500 font-bold uppercase text-xs"
+                    >Total Revenue</span
+                  ><br />
+                  <span
+                    class="text-xl font-bold flex items-center text-slate-800"
+                    >$3493
+                    <span
+                      class="material-symbols-outlined text-green-500 text-3xl"
+                    >
+                      arrow_drop_up
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="number">
+                <div
+                  class="icon size-14 rounded-full bg-[#04986b] flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-3xl text-white">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <span class="text-center">
+                  <span class="text-gray-500 font-bold uppercase text-xs"
+                    >Total Revenue</span
+                  ><br />
+                  <span
+                    class="text-xl font-bold flex items-center text-slate-800"
+                    >$3493
+                    <span
+                      class="material-symbols-outlined text-green-500 text-3xl"
+                    >
+                      arrow_drop_up
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="graphs grow flex flex-wrap gap-3 mt-2">
+              <div
+                class="graph flex h-52 flex-col grow rounded-md bg-gray-200 overflow-hidden min-w-[200px]"
+              >
+                <span
+                  class="bg-gradient-to-b from-gray-400 to-transparent p-2 text-md text-slate-700 font-semibold"
+                  >Graph</span
+                >
+                <hr class="border-2 border-gray-300" />
+                <span class="grow flex items-center justify-center">
+                  Graph here</span
+                >
+              </div>
+              <div
+                class="graph flex h-52 flex-col grow rounded-md bg-gray-200 overflow-hidden min-w-[200px]"
+              >
+                <span
+                  class="bg-gradient-to-b from-gray-400 to-transparent p-2 text-md text-slate-700 font-semibold"
+                  >Graph</span
+                >
+                <hr class="border-2 border-gray-300" />
+                <span class="grow flex items-center justify-center">
+                  Graph here</span
+                >
+              </div>
+              <div
+                class="graph flex h-52 flex-col grow rounded-md bg-gray-200 overflow-hidden min-w-[200px]"
+              >
+                <span
+                  class="bg-gradient-to-b from-gray-400 to-transparent p-2 text-md text-slate-700 font-semibold"
+                  >Graph</span
+                >
+                <hr class="border-2 border-gray-300" />
+                <span class="grow flex items-center justify-center">
+                  Graph here</span
+                >
+              </div>
+              <div
+                class="graph flex h-52 flex-col grow rounded-md bg-gray-200 overflow-hidden min-w-[200px]"
+              >
+                <span
+                  class="bg-gradient-to-b from-gray-400 to-transparent p-2 text-md text-slate-700 font-semibold"
+                  >Graph</span
+                >
+                <hr class="border-2 border-gray-300" />
+                <span class="grow flex items-center justify-center">
+                  Graph here</span
+                >
+              </div>
+              <div
+                class="graph flex h-52 flex-col grow rounded-md bg-gray-200 overflow-hidden min-w-[200px]"
+              >
+                <span
+                  class="bg-gradient-to-b from-gray-400 to-transparent p-2 text-md text-slate-700 font-semibold"
+                  >Graph</span
+                >
+                <hr class="border-2 border-gray-300" />
+                <span class="grow flex items-center justify-center">
+                  Graph here</span
+                >
+              </div>
+              <div
+                class="graph flex h-52 flex-col grow rounded-md bg-gray-200 overflow-hidden min-w-[200px]"
+              >
+                <span
+                  class="bg-gradient-to-b from-gray-400 to-transparent p-2 text-md text-slate-700 font-semibold"
+                  >Graph</span
+                >
+                <hr class="border-2 border-gray-300" />
+                <span class="grow flex items-center justify-center">
+                  Graph here</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
